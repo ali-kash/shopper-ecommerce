@@ -1,1 +1,27 @@
-/* No CSS *//*# sourceMappingURL=seach.css.map */
+.search-results {
+  width: 100%;
+  padding: 60px 0;
+  margin-top: 40px;
+}
+
+.search-results .heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 400;
+  margin-bottom: 40px;
+  padding: 0 10vw;
+}
+
+.search-results .heading span {
+  font-weight: 700;
+}
+
+.search-results .product__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  height: auto;
+  grid-row-gap: 40px;
+}
+/*# sourceMappingURL=seach.css.map */

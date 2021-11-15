@@ -29,4 +29,9 @@
   font-size: 40px;
   text-transform: capitalize;
 }
+
+.collections__item:nth-child(3) {
+  grid-column: span 2;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=collections.css.map */

@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(40vh - 80px);
   background-image: url("../images/header.png");
   background-size: cover;
   display: -webkit-box;

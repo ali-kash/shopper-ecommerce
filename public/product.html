@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Product -</title>
+		<link rel="stylesheet" href="./styles/global.css" />
+	</head>
+	<body>
+		<nav class="navbar"></nav>
+
+		<section class="product-details">
+			<div class="image-slider">
+				<div class="product-details__images">
+					<img
+						src="./images/product-image-1.png"
+						alt="product one"
+						class="active"
+					/>
+					<img src="./images/product-image-2.png" alt="product two" />
+					<img src="./images/product-image-3.png" alt="product three" />
+					<img src="./images/product-image-4.png" alt="product four" />
+				</div>
+			</div>
+			<div class="details">
+				<h1 class="details__product-brand">Kalvin Clein</h1>
+				<p class="details__short-desc">
+					Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+					officia deserunt mollit anim id est laborum.
+				</p>
+				<span class="product-price">$39</span>
+				<span class="product-actual-price">$$59</span>
+				<span class="product-discount">( 50% off )</span>
+
+				<p class="sub-heading">select size</p>
+
+				<input type="radio" name="size" value="s" hidden checked id="s-size" />
+				<label for="s-size" class="size-radio-btn check">s</label>
+				<input type="radio" name="size" value="m" hidden id="m-size" />
+				<label for="m-size" class="size-radio-btn">m</label>
+				<input type="radio" name="size" value="l" hidden id="l-size" />
+				<label for="l-size" class="size-radio-btn">l</label>
+				<input type="radio" name="size" value="xl" hidden id="xl-size" />
+				<label for="xl-size" class="size-radio-btn">xl</label>
+				<input type="radio" name="size" value="xxl" hidden id="xxl-size" />
+				<label for="xxl-size" class="size-radio-btn">xxl</label>
+
+				<div class="btns">
+					<button class="btn cart-btn">add to cart</button>
+					<button class="btn">add to wishlist</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="detail-desc">
+			<h2 class="heading">quis nostrud</h2>
+			<p class="detail-desc__info">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+				veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+				commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+				occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+				mollit anim id est laborum.
+			</p>
+		</section>
+
+		<!-- slider section -->
+		<section class="product">
+			<h2 class="product__category">best sellers</h2>
+			<button class="pre-btn">
+				<img src="./images/arrow.png" alt="previous button" />
+			</button>
+			<button class="nxt-btn">
+				<img src="./images/arrow.png" alt="next button" />
+			</button>
+			<div class="product__container">
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card1.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card2.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card3.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card4.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card5.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card6.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card7.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card8.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- slider section -->
+		<section class="product">
+			<h2 class="product__category">shoes</h2>
+			<button class="pre-btn">
+				<img src="./images/arrow.png" alt="previous button" />
+			</button>
+			<button class="nxt-btn">
+				<img src="./images/arrow.png" alt="next button" />
+			</button>
+			<div class="product__container">
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card1.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card2.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card3.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card4.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card5.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card6.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card7.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+				<div class="product__card">
+					<div class="product__image">
+						<span class="discount-tag">50% off</span>
+						<img
+							src="./images/card8.png"
+							class="product__thumb"
+							alt="product"
+						/>
+						<button class="card-btn">add to wish list</button>
+					</div>
+					<div class="product__info">
+						<h2 class="brand">brand</h2>
+						<p class="short-desc">short description about product...</p>
+						<span class="price">$20</span>
+						<span class="actual-price">$40</span>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer></footer>
+
+		<script src="./js/nav.js"></script>
+		<script src="./js/footer.js"></script>
+		<script src="./js/slider.js"></script>
+		<script src="./js/product.js"></script>
+	</body>
+</html>

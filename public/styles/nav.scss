@@ -53,13 +53,17 @@
 		border: none;
 		outline: none;
 		cursor: pointer;
-		background: white;
-		color: black;
+		background: #383838;
+		color: #fff;
 		text-transform: capitalize;
 		font-size: 14px;
 		border-top-right-radius: 10px;
 		border-bottom-right-radius: 10px;
 		border: 1px solid darkblue;
+		&:hover {
+			background: #fff;
+			color: #383838;
+		}
 	}
 }
 

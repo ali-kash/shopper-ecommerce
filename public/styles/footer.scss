@@ -44,4 +44,42 @@ footer {
 			}
 		}
 	}
+
+	&__title,
+	&__info {
+		color: rgba(255, 255, 255, 0.75);
+		margin-bottom: 20px;
+		text-transform: capitalize;
+	}
+
+	&__title {
+		margin-top: 80px;
+		color: #fff;
+	}
+
+	&__social {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+		&-link {
+			color: #fff;
+			text-decoration: none;
+			text-transform: capitalize;
+			&:nth-child(1) {
+				margin-left: 0;
+			}
+		}
+	}
+
+	&__credit {
+		width: 100%;
+		padding: 10px;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		text-align: center;
+		color: rgba(255, 255, 255, 0.75);
+		background: rgba(0, 0, 0, 0.2);
+		text-transform: capitalize;
+	}
 }

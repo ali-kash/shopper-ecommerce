@@ -6,11 +6,33 @@
 @import './footer.scss';
 @import './product.scss';
 @import './seach.scss';
-@import './page-not-found.scss';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'roboto', sans-serif;
+}
+
+.section {
+	width: 100%;
+	padding: 60px 0;
+	margin-top: 40px;
+}
+
+// 404 - Page Not Found
+.page-not-found {
+	.four-0-four-img {
+		margin: 60px auto;
+		display: block;
+	}
+
+	.four-0-four-msg {
+		text-align: center;
+		text-transform: capitalize;
+		color: #383838;
+		a {
+			color: #383838;
+		}
+	}
 }

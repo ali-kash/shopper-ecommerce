@@ -1,4 +1,4 @@
-.search-results {
+.page-not-found {
 	width: 100%;
 	padding: 60px 0;
 	margin-top: 40px;
@@ -13,12 +13,5 @@
 		span {
 			font-weight: 700;
 		}
-	}
-
-	.product__container {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		height: auto;
-		grid-row-gap: 40px;
 	}
 }

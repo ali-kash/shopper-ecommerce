@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
 // @import './variables.scss';
 @import './nav.scss';
 @import './home.scss';
@@ -6,17 +8,39 @@
 @import './footer.scss';
 @import './product.scss';
 @import './seach.scss';
+@import './signup.scss';
 
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'roboto', sans-serif;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.loader {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #f5f5f5;
+	z-index: 99;
+	display: none;
+	img {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%);
+		width: 100px;
+	}
 }
 
 .section {
 	width: 100%;
-	padding: 60px 0;
+	padding: 60px 10vw;
 	margin-top: 40px;
 }
 

@@ -1,0 +1,25 @@
+{
+	"name": "shopper-ecommerce",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon server.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ali-kash/shopper-ecommerce.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/ali-kash/shopper-ecommerce/issues"
+	},
+	"homepage": "https://github.com/ali-kash/shopper-ecommerce#readme",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"express.js": "^1.0.0",
+		"firebase-admin": "^10.0.0",
+		"nodemon": "^2.0.15"
+	}
+}

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap");
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -624,17 +625,233 @@ footer {
   grid-row-gap: 40px;
 }
 
+.signup .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: #f5f5f5;
+}
+
+.signup .logo {
+  height: 80px;
+  display: block;
+  margin: 0 auto 50px;
+}
+
+.signup form {
+  width: 300px;
+  position: relative;
+}
+
+.signup form .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.signup form input[type='text'],
+.signup form input[type='password'],
+.signup form input[type='email'] {
+  display: block;
+  width: 300px;
+  height: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  background: #fff;
+  border: none;
+  outline: none;
+  margin: 20px 0;
+  text-transform: uppercase;
+  color: #383838;
+  font-size: 16px;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.signup form ::-webkit-input-placeholder {
+  color: #383838;
+  font-size: 14px;
+}
+
+.signup form :-ms-input-placeholder {
+  color: #383838;
+  font-size: 14px;
+}
+
+.signup form ::-ms-input-placeholder {
+  color: #383838;
+  font-size: 14px;
+}
+
+.signup form ::placeholder {
+  color: #383838;
+  font-size: 14px;
+}
+
+.signup form .checkbox {
+  -webkit-appearance: none;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 2px;
+  background: #fff;
+  border: #383838;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.signup form .checkbox:checked {
+  background: #383838;
+}
+
+.signup form .checkbox:after {
+  content: '';
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  pointer-events: none;
+  background: url("../images/check.png") no-repeat;
+  background-size: contain;
+  display: none;
+}
+
+.signup form .checkbox:checked:after {
+  display: block;
+}
+
+.signup form label {
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 14px;
+  color: #383838;
+}
+
+.signup form label a {
+  color: #383838;
+}
+
+.signup form .submit-btn {
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #383838;
+  color: #fff;
+  border-radius: 2px;
+  text-transform: capitalize;
+  border: none;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.signup form .submit-btn:hover {
+  background: #fff;
+  color: #383838;
+}
+
+.signup .login-link {
+  margin-top: 20px;
+  color: #383838;
+}
+
+.signup .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 300px;
+  background: #fff;
+  -webkit-box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.signup .alert.show {
+  opacity: 1;
+  pointer-events: all;
+  position: absolute;
+  top: -50px;
+}
+
+.signup .alert__img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.signup .alert__msg {
+  color: #383838;
+  font-size: 15px;
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f5f5f5;
+  z-index: 99;
+  display: none;
+}
+
+.loader img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 100px;
 }
 
 .section {
   width: 100%;
-  padding: 60px 0;
+  padding: 60px 10vw;
   margin-top: 40px;
 }
 

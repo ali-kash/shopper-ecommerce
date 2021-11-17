@@ -1,0 +1,145 @@
+.signup {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: 100vh;
+		background: #f5f5f5;
+	}
+	.logo {
+		height: 80px;
+		display: block;
+		margin: 0 auto 50px;
+	}
+
+	form {
+		width: 300px;
+		position: relative;
+
+		.field {
+			display: flex;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		input[type='text'],
+		input[type='password'],
+		input[type='email'] {
+			display: block;
+			width: 300px;
+			height: 40px;
+			padding: 20px;
+			border-radius: 5px;
+			background: #fff;
+			border: none;
+			outline: none;
+			margin: 20px 0;
+			text-transform: uppercase;
+			color: #383838;
+			font-size: 16px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+		}
+
+		::placeholder {
+			color: #383838;
+			font-size: 14px;
+		}
+
+		.checkbox {
+			-webkit-appearance: none;
+			position: relative;
+			width: 15px;
+			height: 15px;
+			border-radius: 2px;
+			background: #fff;
+			border: #383838;
+			cursor: pointer;
+			margin-right: 5px;
+			&:checked {
+				background: #383838;
+			}
+			&:after {
+				content: '';
+				position: absolute;
+				top: 60%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 80%;
+				height: 100%;
+				pointer-events: none;
+				background: url('../images/check.png') no-repeat;
+				background-size: contain;
+				display: none;
+			}
+			&:checked:after {
+				display: block;
+			}
+		}
+
+		label {
+			text-transform: uppercase;
+			display: inline-block;
+			font-size: 14px;
+			color: #383838;
+			a {
+				color: #383838;
+			}
+		}
+
+		.submit-btn {
+			width: 300px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			background: #383838;
+			color: #fff;
+			border-radius: 2px;
+			text-transform: capitalize;
+			border: none;
+			cursor: pointer;
+			margin-top: 30px;
+			&:hover {
+				background: #fff;
+				color: #383838;
+			}
+		}
+	}
+
+	.login-link {
+		margin-top: 20px;
+		color: #383838;
+	}
+
+	.alert {
+		display: flex;
+		align-items: center;
+		width: 300px;
+		background: #fff;
+		box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+		padding: 20px;
+		border-radius: 10px;
+		opacity: 0;
+		pointer-events: none;
+		transition: 1s;
+
+		&.show {
+			opacity: 1;
+			pointer-events: all;
+			position: absolute;
+			top: -50px;
+		}
+
+		&__img {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+		&__msg {
+			color: #383838;
+			font-size: 15px;
+			font-weight: 400;
+		}
+	}
+}

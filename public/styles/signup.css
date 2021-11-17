@@ -15,6 +15,7 @@
   width: 100vw;
   height: 100vh;
   background: #f5f5f5;
+  position: relative;
 }
 
 .signup .logo {
@@ -25,7 +26,6 @@
 
 .signup form {
   width: 300px;
-  position: relative;
 }
 
 .signup form .field {
@@ -147,7 +147,7 @@
   color: #383839;
 }
 
-.signup .alert {
+.signup .alertBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,9 +155,12 @@
       -ms-flex-align: center;
           align-items: center;
   width: 300px;
+  min-height: 150px;
   background: #fff;
   -webkit-box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
           box-shadow: 0 5px 100px rgba(0, 0, 0, 0.05);
+  position: absolute;
+  top: 60%;
   padding: 20px;
   border-radius: 10px;
   opacity: 0;
@@ -166,20 +169,19 @@
   transition: 1s;
 }
 
-.signup .alert.show {
+.signup .alertBox.show {
   opacity: 1;
   pointer-events: all;
-  position: absolute;
-  top: -50px;
+  top: 43%;
 }
 
-.signup .alert__img {
+.signup .alertBox__img {
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
 
-.signup .alert__msg {
+.signup .alertBox__msg {
   color: #383838;
   font-size: 15px;
   font-weight: 400;

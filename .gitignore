@@ -1,6 +1,8 @@
 # Dependency directories
 node_modules/
 .env
+shopper-ecommerce-3350a-firebase-adminsdk-t0n3e-33e5612a0d.json
+server.js
 
 # Mac files
 .DS_Store

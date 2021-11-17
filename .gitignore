@@ -1,0 +1,13 @@
+# Dependency directories
+node_modules/
+.env
+
+# Mac files
+.DS_Store
+
+# Yarn
+yarn-error.log
+.pnp/
+.pnp.js
+# Yarn Integrity file
+.yarn-integrity
